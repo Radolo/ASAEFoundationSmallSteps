@@ -17,10 +17,10 @@
  * under the License.
  */
 * {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+	-webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
 }
 
 
@@ -32,14 +32,14 @@ a, button, input, .preLoad, mainContent, .k-tool-icon, .notesWrapper, .k-link, .
 	-webkit-transition: all linear 0.2s;
 	-moz-transition: all linear 0.2s;
 	-o-transition: all linear 0.2s;
-	transition: all linear 0.2s;		
+	transition: all linear 0.2s;
 }
 
 .contactInfoEdit .radoloInput {
 	-webkit-transition: none !important;
 	-moz-transition: none !important;
 	-o-transition: none !important;
-	transition: none !important;		
+	transition: none !important;
 }
 
 .contactInfoEdit .radoloInput, .button.no-style, button.no-style, .no-style, .k-state-focused, .k-list>.k-state-focused, .k-listview>.k-state-focused, .k-grid-header th.k-state-focused, td.k-state-focused, .k-button:focus:not(.k-state-disabled):not([disabled]), .k-button.k-state-focused, .k-autocomplete.k-state-border-down, .k-autocomplete.k-state-default, .k-picker-wrap.k-state-default, .k-numeric-wrap.k-state-default, .k-dropdown-wrap.k-state-default, .label div.radio, .contactInfoEdit .editConfirm   {
@@ -86,7 +86,7 @@ a, button, input, .preLoad, mainContent, .k-tool-icon, .notesWrapper, .k-link, .
 ul.form li.item:after, .contactInfoEdit li:after, .r-button-container:after, .r-pager-container:after {
 	display: block;
 	clear: both;
-	content:"";	
+	content:"";
 }
 
 /* --------------------------------------------------------------------- */
@@ -108,14 +108,14 @@ ul.form li.item:after, .contactInfoEdit li:after, .r-button-container:after, .r-
 
 h4 {
 	font-size: 2.3rem;
-	font-family: "open sans"_oblique;
+	font-family: helvetica, Arial, sans-serif;
 	margin-bottom: .66em;
 }
 
 h5 {
 	font-size: 2.16rem;
 	line-height: 1.1em;
-	font-family: "open sans";
+	font-family: helvetica, Arial, sans-serif;
 	margin-bottom: 2.16rem;
 }
 
@@ -123,14 +123,14 @@ h5 {
 /*progress containers will contain the loading gif and the need to be relative so it does not cover the entire page*/
 .progressContainer
 {
-    position:relative;
+	position:relative;
 }
 
 .progressContainer {
 	-webkit-transition:all .25s linear;
 	-moz-transition:all .25s linear;
 	-o-transition:all .25s linear;
-	transition:all .25s linear;	
+	transition:all .25s linear;
 	width: 100%;
 }
 
@@ -138,20 +138,20 @@ h5 {
 .radoloLeaving {
 	position: absolute;
 	top:0; left: 0;
-	z-index: 0; 
+	z-index: 0;
 }
 .radoloEntering {
 	position: relative;
-	z-index: 100; 
+	z-index: 100;
 }
 
 .radoloEntering, .radoloLeaving {
 	-webkit-transition: all linear .25s;
 	-moz-transition: all linear .25s;
 	-o-transition: all linear .25s;
-	transition: all linear .25s;	
-	opacity: 1;	
-	
+	transition: all linear .25s;
+	opacity: 1;
+
 }
 
 .radoloEntering.radoloBackward, .radoloLeaving.radoloForward {
@@ -173,7 +173,7 @@ h5 {
 	-ms-transform: translateX(0) ;
 	transform: translateX(0) ;
 }
-	
+
 
 /* --------------------------------------------------------------------- */
 /* ----- We reset some of the CSS Kendo does, because it's stupid. ----- */
@@ -198,7 +198,7 @@ h5 {
 .k-list .k-state-hover, .k-list .k-state-focused, .k-list .k-state-highlight, .k-list .k-state-selected, .k-dropzone {
 	-moz-border-radius: inherit;
 	-webkit-border-radius: inherit;
-	border-radius: inherit;	
+	border-radius: inherit;
 }
 
 .k-popup .k-list .k-state-selected {
@@ -218,22 +218,22 @@ h5 {
 	height: auto;
 }
 
-.k-i-clock, 
+.k-i-clock,
 .k-i-seek-w,
-.k-i-arrow-w, 
-.k-i-arrow-e, 
+.k-i-arrow-w,
+.k-i-arrow-e,
 .k-i-seek-e,
-.k-warning,  
-.k-i-arrow-s, 
-.k-i-arrow-n, 
-.k-i-close, 
+.k-warning,
+.k-i-arrow-s,
+.k-i-arrow-n,
+.k-i-close,
 .k-i-calendar,
-.radoloLoading span.image, 
+.radoloLoading span.image,
 .contactAddress div.checker span,
 .manageItems td div.checker span,
 .k-button-icontext.k-grid-delete,
 .viewContact .k-link.k-header div.checker span,
-.dontforget .radoloToolTipContent:before, 
+.dontforget .radoloToolTipContent:before,
 ul.rocks li:before,
 .k-tool-icon {
 	display: inline-block;
@@ -252,19 +252,19 @@ ul.rocks li:before,
 	text-indent: -99999px;
 }
 
-.k-i-clock:before, 
-.k-i-seek-w:before, 
-.k-i-arrow-w:before, 
-.k-i-arrow-e:before, 
-.k-i-seek-e:before, 
+.k-i-clock:before,
+.k-i-seek-w:before,
+.k-i-arrow-w:before,
+.k-i-arrow-e:before,
+.k-i-seek-e:before,
 .k-warning:before,
-.k-i-arrow-s:before, 
-.k-i-arrow-n:before, 
-.k-i-close:before, 
-.k-i-calendar:before, 
+.k-i-arrow-s:before,
+.k-i-arrow-n:before,
+.k-i-close:before,
+.k-i-calendar:before,
 .radoloLoading span.image:before,
-.k-button-icontext.k-grid-delete:before, 
-.k-tool-icon:before, 
+.k-button-icontext.k-grid-delete:before,
+.k-tool-icon:before,
 ul.rocks li:before,
 div.checker span {
 	display: inline-block;
@@ -274,38 +274,38 @@ div.checker span {
 }
 
 /* replace k-icon wtih BA Back Office icons */
-.k-icon.k-i-clock, 
+.k-icon.k-i-clock,
 .k-icon.k-i-seek-w,
 .k-icon.k-i-arrow-w,
-.k-icon.k-i-arrow-e, 
+.k-icon.k-i-arrow-e,
 .k-icon.k-i-seek-e,
-.k-icon.k-warning, 
-.k-icon.k-i-arrow-s, 
+.k-icon.k-warning,
+.k-icon.k-i-arrow-s,
 .k-icon.k-i-arrow-n,
 .k-icon.k-i-close,
-.k-icon.k-i-calendar,  
-.radoloLoading span.image, 
+.k-icon.k-i-calendar,
+.radoloLoading span.image,
 .contactAddress div.checker span,
 .manageItems td div.checker span,
-.k-button-icontext.k-grid-delete, 
-.k-tool-icon, 
+.k-button-icontext.k-grid-delete,
+.k-tool-icon,
 ul.rocks li:before {font-family: asae}
 
-.k-icon.k-warning:before, 
+.k-icon.k-warning:before,
 .k-button-icontext.k-grid-delete:before {
 	text-decoration: inherit;
 	display: inline-block;
 	speak: none;
 }
 
-.k-icon.k-i-clock:before {content:"\e07c"} 
+.k-icon.k-i-clock:before {content:"\e07c"}
 .k-icon.k-i-seek-w:before {content: "\e05d"}
 .k-icon.k-i-arrow-w:before {content: "\e05e"}
 .k-icon.k-i-arrow-e:before {content: "\e04d"}
 .k-icon.k-i-seek-e:before {content: "\e04c"}
 .k-icon.k-warning:before {content: "\e657";}
-.k-icon.k-i-arrow-s:before {content: "\e039";} 
-.k-icon.k-i-arrow-n:before {content: "\e03b"} 
+.k-icon.k-i-arrow-s:before {content: "\e039";}
+.k-icon.k-i-arrow-n:before {content: "\e03b"}
 .k-icon.k-i-close:before {content:"\e62c"}
 .k-icon.k-i-calendar:before {content: "\e06b"}
 .radoloLoading span.image:before {content: "\e607" }
@@ -358,7 +358,7 @@ ul.rocks li:before {font-family: asae}
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	display: table;	
+	display: table;
 	z-index: 0;
 }
 .radoloEntering {z-index: 50}
@@ -404,7 +404,7 @@ ul.rocks li:before {font-family: asae}
 	font-size: 5.5rem;
 	font-family: heavy;
 	padding: 3.25rem;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 	width: auto;
 	height: auto;
 }
@@ -436,7 +436,7 @@ ul.rocks li:before {font-family: asae}
 }
 
 .trackerData {
-	padding: 3rem 0; 
+	padding: 3rem 0;
 	width: 100%;
 	height: 100%;
 }
@@ -468,7 +468,7 @@ ul.rocks li:before {font-family: asae}
 	opacity: 1;
 	z-index: 100;
 	position: relative;
-}	
+}
 
 /* Finished */
 .finish .trackerInfo .number {font-size: 6.3rem}
@@ -498,12 +498,12 @@ ul.rocks li:before {font-family: asae}
 }
 .socialShare > * {
 	vertical-align: middle;
-	display: inline-block; 
+	display: inline-block;
 	margin: 0 .5rem;
 }
 .socialShare i {font-size: 3rem;}
 .socialShare a {
-	color: #FFFFFF; 
+	color: #FFFFFF;
 	text-decoration: none;
 }
 
@@ -608,7 +608,7 @@ span.reqtxt {
 }
 
 ul.form li.item {
-	margin-bottom: 1rem;	
+	margin-bottom: 1rem;
 	list-style: none;
 }
 
@@ -619,8 +619,8 @@ input[disabled], .button:disabled {opacity: .5; cursor: not-allowed;}
 input[type="text"], input[type="password"], .radoloInput {
 	height: 5.5rem;
 	width: 100%;
-	line-height: 5.5rem;	
-	font-family: "open sans";
+	line-height: 5.5rem;
+	font-family: helvetica, Arial, sans-serif;
 	border: none;
 	color: #575757;
 	font-size: 2.5rem;
@@ -637,7 +637,7 @@ input[type="text"], input[type="password"], .radoloInput {
 .button, .r-page-size-container {
 	position: relative;
 	background: #AAAAAA;
-	font-family: "open sans";
+	font-family: helvetica, Arial, sans-serif;
 	display: block;
 	height: 6rem;
 	line-height: 6rem;
@@ -670,13 +670,13 @@ input[type="text"], input[type="password"], .radoloInput {
 	border: none;
 	background: none;
 	line-height: inherit;
-	color: inherit;	
+	color: inherit;
 	width: auto;
 	display: inline-block;
 	height: auto;
 	font-size: initial;
 }
-.button.small.no-style {font-size: 1.5rem;} 
+.button.small.no-style {font-size: 1.5rem;}
 .selectWrap {position: relative;}
 .r-page-size-container {
 	clear: both;
@@ -849,7 +849,7 @@ body.login .appContent {padding: 1.2em}
 .pageHeader .backBTN i {
 	vertical-align: middle;
 	line-height: 6rem;
-	
+
 }
 .pageHeader .backBTN i.backIcon {padding: 0 .3rem;}
 .pageHeader .backBTN i.icon-r-logo-marker {
@@ -863,7 +863,7 @@ body.login .appContent {padding: 1.2em}
 	height: 6rem;
 	padding: 0 .2rem 0 .4rem;
 	vertical-align:middle;
-	font-family: "open sans";
+	font-family: helvetica, Arial, sans-serif;
 }
 
 .pageHeader .backBTN em {
@@ -946,7 +946,7 @@ body.login .appContent {padding: 1.2em}
 
 .mainContent.history li.trackerInfo a span.historyDistance {
 	text-align: right;
-	font-family: "open sans";
+	font-family: helvetica, Arial, sans-serif;
 	padding-right: 1.75rem;
 	width: 7rem;
 }
@@ -1008,13 +1008,13 @@ body.login .appContent {padding: 1.2em}
 }
 
 @-webkit-keyframes rotate {
-  from {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
-  to {transform:rotate(360deg);-webkit-transform:rotate(360deg);}
+	from {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+	to {transform:rotate(360deg);-webkit-transform:rotate(360deg);}
 }
 
 @keyframes rotate {
-  from {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
-  to {transform:rotate(360deg);-webkit-transform:rotate(360deg);}
+	from {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+	to {transform:rotate(360deg);-webkit-transform:rotate(360deg);}
 }
 
 
@@ -1024,59 +1024,64 @@ body.login .appContent {padding: 1.2em}
 /* ------------------------------------- */
 
 .k-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10001;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: .7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10001;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .7;
 }
 .k-widget.k-window {
-    background: #ffffff;
-    width: 80% !important; 
-    left: 10% !important;
-    border: none;
-    -moz-box-shadow: 0 0 20px rgba(0,0,0,.5);
-    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.5);
-    box-shadow: 0 0 20px rgba(0,0,0,.5);
-    position: fixed;
+	background: #ffffff;
+	width: 80% !important;
+	left: 10% !important;
+	border: none;
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,.5);
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+	position: fixed;
 }
 
 .k-window-titlebar.k-header {
-    background: #FFFFFF;
-    border-color: #FFFFFF;
-    height: auto;
-    padding: .3em 0;
-    color: #585859;
-    font-family: "Open Sans";
-    font-size: 2.27rem;
-    font-weight: 300;
-    font-style: italic;
+	background: #FFFFFF;
+	border-color: #FFFFFF;
+	height: auto;
+	padding: .3em 0;
+	color: #585859;
+	font-family: helvetica, Arial, sans-serif;
+	font-size: 3.5rem;
+	font-weight: 300;
+	font-style: italic;
+	line-height: 1em;
+	margin-bottom: 0 !important;
 }
 div.dialogMessage {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #585859;
+	text-align: center;
+	font-size: 2.1rem;
+	color: #585859;
+	padding: 0 2rem;
+	line-height: 1.2em;
 }
 .dialogButtons {
-    margin-top: 15px;
-    text-align: center;
-    width: 100%;
+	margin: 1.5rem 0;
+	text-align: center;
+	width: 100%;
+	line-height: 1em;
 }
 .dialogButtons button.k-button {
-    border: none;
-    background: #ffffff;
-    color: #585859;
-    font-weight: 300;
-    font-family: "Open Sans";
-    text-transform: uppercase;
-    font-size: 2.16rem;
-    padding: 7px 40px;
-    margin: 0;
-    width: 33.33%;
-    display: inline-block;
+	border: none;
+	background: #ffffff;
+	color: #585859;
+	font-weight: 300;
+	font-family: helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 3rem;
+	padding: 0px 40px;
+	margin: 0;
+	width: 33.33%;
+	display: inline-block;
 }
 
 @media (max-width: 480px) {
@@ -1084,7 +1089,7 @@ div.dialogMessage {
 	/* ----- Media Queries ----- */
 	/* ------------------------------------- */
 	html {font-size: 45%}
-	
+
 	h4 {font-size: 2rem;}
 	.branding .icon-r-asae-star, .branding .icon-r-asae {
 		text-decoration: none;
@@ -1092,10 +1097,10 @@ div.dialogMessage {
 	input[type="text"], input[type="password"], .radoloInput {
 		font-family: light;
 	}
-	
+
 	.k-picker-wrap .k-select, .k-numeric-wrap .k-select, .k-dropdown-wrap .k-select {width: 1em}
 	.pageHeader .k-menu .k-animation-container {right: 5px !important;}
-	
+
 }
 
 /* ------------------------------------- */
@@ -1139,34 +1144,34 @@ div.dialogMessage {
 
 body {
 	background: #1A3E6F;
-    font-family: "open sans", Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    width:100%;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size:12px;
+	height:100%;
+	margin:0px;
+	padding:0px;
+	width:100%;
 	color: #ffffff;
 }
 
 /* Portrait layout (default) */
 .app {
-    position:absolute;             /* position in the center of the screen */
-    left: 0;
-    top:50%;
-    height:auto;                   
-    width:auto;                 
-    text-align:center;
-    padding: 0;    /* image height is 200px (bottom 20px are overlapped with text) */
-    margin: -85px 0 0 0; /*set offset when you figure it out */
+	position:absolute;             /* position in the center of the screen */
+	left: 0;
+	top:50%;
+	height:auto;
+	width:auto;
+	text-align:center;
+	padding: 0;    /* image height is 200px (bottom 20px are overlapped with text) */
+	margin: -85px 0 0 0; /*set offset when you figure it out */
 	width: 100%;
 }
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        /* padding: 0; padding-top + padding-bottom + text area = image height */
-        /* margin:0 ; set offset when you figure it out */
-    }
+	.app {
+		/* padding: 0; padding-top + padding-bottom + text area = image height */
+		/* margin:0 ; set offset when you figure it out */
+	}
 }
 
 
@@ -1189,21 +1194,21 @@ body {
 /* .event {
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
-	border-radius: 4px;	
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+	border-radius: 4px;
+	color:#FFFFFF;
+	font-size:12px;
+	margin:0px 30px;
+	padding:2px 0px;
 }
 
 .event.listening {
-    background-color:#333333;
-    display:block;
+	background-color:#333333;
+	display:block;
 }
 
 .event.received {
-    background-color:#4B946A;
-    display:none;
+	background-color:#4B946A;
+	display:none;
 } */
 
 /* ------------------------------------- */
@@ -1229,26 +1234,26 @@ body {
 	top: 96px;
 }
 @-webkit-keyframes mubi-pop {
-  0% {
-    -webkit-transform: scale(1,1);
-     opacity: 1;
-  }
-  25% {
-   -webkit-transform: scale(.95,.95); 
-     opacity: .25;
-  }
-  50% {
-   -webkit-transform: scale(1,1);  
-     opacity: 1;
-  }
-  75% {
-   -webkit-transform: scale(.95,.95); 
-     opacity: .25;
-  }
-  100% {
-   -webkit-transform: scale(1,1);  
-     opacity: 1;
-  }
+	0% {
+	-webkit-transform: scale(1,1);
+	opacity: 1;
+	}
+	25% {
+	-webkit-transform: scale(.95,.95);
+	opacity: .25;
+	}
+	50% {
+	-webkit-transform: scale(1,1);
+	opacity: 1;
+	}
+	75% {
+	-webkit-transform: scale(.95,.95);
+	opacity: .25;
+	}
+	100% {
+	-webkit-transform: scale(1,1);
+	opacity: 1;
+	}
 }
 
 .loader i:nth-child(1) {
@@ -1256,7 +1261,7 @@ body {
 	left: 56px;
 }
 .loader i:nth-child(2) {
-	-webkit-animation-delay:0.4s; 
+	-webkit-animation-delay:0.4s;
 	left: 76px;
 }
 .loader i:nth-child(3) {
@@ -1266,20 +1271,20 @@ body {
 
 
 @keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.7; }
-    to { opacity: 1.0; }
+	from { opacity: 1.0; }
+	50% { opacity: 0.7; }
+	to { opacity: 1.0; }
 }
- 
+
 @-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.7; }
-    to { opacity: 1.0; }
+	from { opacity: 1.0; }
+	50% { opacity: 0.7; }
+	to { opacity: 1.0; }
 }
- 
+
 .blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+	animation:fade 3000ms infinite;
+	-webkit-animation:fade 3000ms infinite;
 }
 
 
