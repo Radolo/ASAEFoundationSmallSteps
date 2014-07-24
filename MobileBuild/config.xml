@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        xmlns:android   = "http://schemas.android.com/apk/res/android"
+         id        =  "com.Radolo.ASAEmovement"
+        version   = "1.0.2"
+        versionCode ="345">
+
+  <name>ASAE Movement</name>
+
+  <description>ASAE Movement App</description>
+
+  <author href="http://radolo.com" email="info@radolo.com">
+    Radolo LLC
+  </author>
+
+
+  <gap:platform name="ios" />
+  <gap:platform name="android" />
+  
+
+  <preference name="permissions"                value="none"/>
+
+  <!-- Customize your app and platform with the preference element. -->
+  <preference name="phonegap-version"           value="3.3.0" />
+  <!-- all: current version of PhoneGap -->
+  <preference name="orientation"                value="default" />
+  <!-- all: default means both landscape and portrait are enabled -->
+  <preference name="target-device"              value="universal" />
+  <!-- all: possible values handset, tablet, or universal -->
+  <preference name="fullscreen"                 value="true" />
+  <!-- all: hides the status bar at the top of the screen -->
+  <preference name="prerendered-icon"           value="true" />
+  <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+  <preference name="stay-in-webview"            value="false" />
+  <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+  <preference name="ios-statusbarstyle"         value="black-translucent" />
+  <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+  <preference name="detect-data-types"          value="true" />
+  <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+  <preference name="exit-on-suspend"            value="false" />
+  <!-- ios: if set to true, app will terminate when home button is pressed -->
+  <preference name="show-splash-screen-spinner" value="true" />
+  <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+  <preference name="auto-hide-splash-screen"    value="false" />
+  <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+  <preference name="android-minSdkVersion"      value="7" />
+  <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+
+  <preference name="EnableViewportScale" value="true" />
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="UIWebViewBounce" value="false" />
+
+  <!-- Define app icon for each platform. -->
+  <icon src="icon.png" />
+  <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
+  <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
+  <icon src="res/icon/ios/icon-76.png"            gap:platform="ios"        width="76" height="76" />
+  <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
+  <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
+  <icon src="res/icon/ios/icon-120.png"         	gap:platform="ios"        width="120" height="120" />
+  <icon src="res/icon/ios/icon-152.png"        	gap:platform="ios"        width="152" height="152" />
+  <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
+  <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
+  <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+  <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
+  <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
+  <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
+
+  <!-- Define app splash screen for each platform. -->
+  <gap:splash src="splash.png" />
+  <gap:splash src="res/splash/android/LDPI-portrait.png"  gap:platform="android" gap:density="ldpi" />
+  <gap:splash src="res/splash/android/MDPI-portrait.png"  gap:platform="android" gap:density="mdpi" />
+  <gap:splash src="res/splash/android/HDPI-portrait.png"  gap:platform="android" gap:density="hdpi" />
+  <gap:splash src="res/splash/android/XHDPI-portrait.png" gap:platform="android" gap:density="xhdpi" />
+  <gap:splash src="res/splash/ios/iphone4_portrait.png"    gap:platform="ios"     width="320" height="480" />
+  <gap:splash src="res/splash/ios/iphone4_landscape.png"    gap:platform="ios"     width="480" height="320" />
+  <gap:splash src="res/splash/ios/retina_portrait.png" gap:platform="ios"     width="640" height="960" />
+  <gap:splash src="res/splash/ios/iphone5_portrait.png"  gap:platform="ios"     width="640" height="1136"/>
+  <gap:splash src="res/splash/ios/iphone5_landscape.png"  gap:platform="ios"     width="1136" height="640"/>
+  <gap:splash src="res/splash/ios/IPad_Portrait.png"      gap:platform="ios"     width="768" height="1024" />
+  <gap:splash src="res/splash/ios/IPad_landscape.png"     gap:platform="ios"     width="1024" height="768" />
+  <gap:splash src="res/splash/ios/Default-Landscape_at_2x.png" gap:platform="ios" width="2048" height="1496" />
+  <gap:splash src="res/splash/ios/Default-Portrait_at_2x.png" gap:platform="ios" width="1536" height="2008" />
+  <gap:splash src="res/splash/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
+
+
+  
+  <gap:plugin name="org.apache.cordova.inappbrowser" />
+  <gap:plugin name="org.apache.cordova.network-information" />
+  <gap:plugin name="org.apache.cordova.geolocation" />
+  
+  
+  <gap:plugin name="org.apache.cordova.device" />
+  <gap:plugin name="org.apache.cordova.dialogs" />
+  <gap:plugin name="de.appplant.cordova.plugin.background-mode" />
+
+  <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+  <!-- This is for the notification when the app goes to the background-->
+
+  <feature name="http://api.phonegap.com/1.0/geolocation"/>
+  <feature name="http://api.phonegap.com/1.0/network"/>
+  <feature name="http://api.phonegap.com/1.0/device" />    <!-- For device.uuid -->
+
+
+  <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance" overwrite="true">
+    <false/>
+  </gap:config-file>
+  
+  <gap:config-file platform="android" parent="/manifest/application">
+    <activity android:launchMode="singleInstance" />
+  </gap:config-file>
+  
+
+  <access origin="*" />
+  <access origin="http://127.0.0.1*"/>
+
+
+</widget>
