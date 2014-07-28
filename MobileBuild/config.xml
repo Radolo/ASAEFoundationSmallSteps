@@ -6,7 +6,7 @@
 		xmlns:android   = "http://schemas.android.com/apk/res/android"
 		id        =  "com.Radolo.ASAEFoundationSmallSteps"
 		version   = "1.0.2"
-		versionCode ="345">
+		versionCode ="346">
 
 	<name>Small Steps</name>
 
